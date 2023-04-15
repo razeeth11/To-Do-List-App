@@ -1,0 +1,90 @@
+*{
+  margin: 0%;
+  font-family: "poppins" , "sans-serif";
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(135deg, #153677 , #4e058f);
+  min-height: 100vh;
+}
+
+.container{
+  background-color: rgb(255, 255, 255);
+  max-width: 480px;
+  min-height: 180px;
+  margin: 10% auto;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.input-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  #e3e3e3;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+
+.input-box input{
+  outline: none;
+  border: none;
+  background:transparent;
+  font-size: 14px;
+  padding: 0 0 0 20px ;
+  border-radius: 50px;
+  width: 75%;
+  color: rgb(57, 57, 57);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.input-box button{
+  outline: none;
+  border: none;
+  background-color:  #8f2ce5;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  color:  #ffffff;
+  font-weight: 550;
+}
+
+.list{
+  position: relative;
+}
+
+.list li{
+  list-style: none;
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 50px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.list li::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-image: url("./images/check-mark.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.list li.checked{
+  text-decoration: line-through;
+  color: grey;
+}
+
+.list li.checked::before{
+  background-image: url("./images/check.png");
+}
