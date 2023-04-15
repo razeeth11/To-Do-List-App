@@ -33,7 +33,7 @@ body{
   border: none;
   background:transparent;
   font-size: 14px;
-  padding: 0 0 0 20px ;
+  padding: 10px 20px ;
   border-radius: 50px;
   width: 75%;
   color: rgb(57, 57, 57);
@@ -87,4 +87,19 @@ body{
 
 .list li.checked::before{
   background-image: url("./images/check.png");
+}
+
+span{
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+span:hover{
+  background-color:  #e3e3e3;
 }
